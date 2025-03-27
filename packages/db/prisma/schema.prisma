@@ -37,6 +37,8 @@ model validators{
   id String @id @default(uuid())
   publicKey String
   ipLocation String
+  pendingPayments Int @default(0)
+  lastPayment DateTime?
   websites websites[]
   ticks ticks[]
   createdAt DateTime @default(now())
