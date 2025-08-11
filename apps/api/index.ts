@@ -19,7 +19,7 @@ app.get("/api/v1/websites",(req, res) => {
 app.get("/api/v1/websites/status/:websiteId", (req, res) => {
     const { websiteId } = req.params
     console.log(websiteId)
-    res.send("All websites")
+    res.send("websites")
 })
 
 app.listen(3000, () => {
